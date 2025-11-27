@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Tenis</title>
+  <link rel="stylesheet" href="css/contacto.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <script src="js/main.js"></script>
+  <script src="js/contacto.js"></script>
+</head>
+<body>
+
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="img/tenis.png" alt="Logo TennisShop">
+      <span>TennisShop</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="alta.html">Alta</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <form class="search-form">
+      <input type="text" placeholder="Buscar productos...">
+      <button type="submit">Buscar</button>
+    </form>
+  </header>
+
+  <main>
+    <h1>Contacto</h1>
+    <form id="form-contacto">
+      <label>Nombre:</label>
+      <input type="text" name="nombre" required minlength="2" maxlength="50">
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Comentarios:</label>
+      <textarea name="comentarios" required maxlength="300"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 TennisShop - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Tenis</title>
+
+  <link rel="stylesheet" href="css/alta.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <script defer src="js/main.js"></script>
+  <script defer src="js/alta.js"></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="img/tenis.png" alt="Logo TennisShop">
+      <span>TennisShop</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="alta.html">Alta</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <form class="search-form">
+      <input type="text" placeholder="Buscar productos...">
+      <button type="submit">Buscar</button>
+    </form>
+  </header>
+
+  <main>
+    <h1>Alta de Productos</h1>
+
+    <form id="form-alta">
+
+      <label>Nombre:</label>
+      <input type="text" id="nombre" required minlength="2" maxlength="50">
+
+      <label>Precio:</label>
+      <input type="number" id="precio" required min="0">
+
+      <label>Stock:</label>
+      <input type="number" id="stock" required min="0">
+
+      <label>Marca:</label>
+      <input type="text" id="marca" required>
+
+      <label>Categoría:</label>
+      <select id="categoria" required>
+        <option value="Raquetas">Raquetas</option>
+        <option value="Remeras">Remeras</option>
+        <option value="Pantalones">Pantalones</option>
+      </select>
+
+      <label>Descripción corta:</label>
+      <input type="text" id="descCorta" required maxlength="100">
+
+      <label>Envío sin cargo:</label>
+      <input type="checkbox" id="envio">
+
+      <label>Foto:</label>
+      <input type="file" id="foto" accept="image/*">
+
+      <button type="submit">Agregar Producto</button>
+    </form>
+
+    <h2>Lista de Productos</h2>
+    <table id="tabla-productos" border="1">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Stock</th>
+          <th>Marca</th>
+          <th>Categoría</th>
+          <th>Desc. corta</th>
+          <th>Envío</th>
+          <th>Foto</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 TennisShop - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
